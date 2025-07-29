@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+h1 {
+    margin: 0;
+    color: black
+}
+
+img {
+  transform: rotate3d(0, 1, 0, calc(var(--rotation) * 2))
+}
+
+div#youngMan {
+  display: flex
+}
+
+#cell-holder {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    aspect-ratio: 1 / 1;
+    width: 50%;
+    gap: 8px;
+    color: white
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    background: rgb(48, 180, 55);
+    overflow-wrap: anywhere;
+}
+
+.cellDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    background: black;
+    overflow-wrap: anywhere;
+}
+
+.cell.selected {
+    border: rgb(0, 255, 0) 8px solid
+}
+.cellDetail.selected {
+    border: rgb(110, 110, 110) 8px solid
+}
+
+/* // BUTTONS // */
+div#choice {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+
+
+
+/*Minecraft board button*/
+.dropdownM {
+    position: relative;
+    display: inline-block;
+    color: green;
+    font-size: 30px;
+    border: rgb(123, 255, 123) ;
+    border-style: outset;
+    background-color: rgb(123, 255, 123);
+    padding: 5% ;
+    margin-right: 20px;
+  }
+  
+  .dropdownM-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdownM:hover .dropdownM-content {
+    display: block;
+  }
+  
+  /*Among Us board button*/
+  .dropdownA {
+    position: relative;
+    display: inline-block;
+    color: red;
+    font-size: 30px;
+    border: rgb(255, 123, 123) ;
+    border-style: outset;
+    background-color: rgb(255, 123, 123);
+    padding: 5% ;
+    
+  }
+  
+  .dropdownA-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdownA:hover .dropdownA-content {
+    display: block;
+  }
+  
+
+
+/*Sonic board button*/
+.dropdownS {
+  position: relative;
+  display: inline-block;
+  color: blue;
+  font-size: 30px;
+  border: rgb(123, 158, 255) ;
+  border-style: outset;
+  background-color: rgb(123, 158, 255);
+  padding: 5% ;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-left: 20px;
+}
+
+.dropdownS-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropImg {
+    width: 200px
+}
+
+.dropdownS:hover .dropdownS-content {
+  display: block;
+}

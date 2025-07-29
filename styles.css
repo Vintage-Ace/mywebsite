@@ -10,6 +10,26 @@ img {
 	width: auto ;
 	height: auto ;
 }
+
+.art{
+	width: 50%;
+	}
+div#artbox {
+	display: flex;
+	justify-content: space-between;
+}
+a#plug {
+	color:white
+}
+
+div#insult {
+	display:flex
+}
+
+img#dumpster {
+	min-width: 50%;
+}
+
 input, select, button, textarea {
 	max-width: 100% ;
 }
